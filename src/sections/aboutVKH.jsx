@@ -1,10 +1,11 @@
 import React from "react";
-import styles from "../css/aboutVKH.module.css";
+import { Paragraph, H2, DarkSection } from '../css/style'
+
 export function AboutVKH() {
   return (
-    <div className={styles.aboutVKH}>
-      <h2>About VKH</h2>
-      <p>
+    <DarkSection>
+      <H2>About VKH</H2>
+      <Paragraph>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In rutrum.
         Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus
         purus, vel sagittis velit mauris vel metus. Nullam sit amet magna in
@@ -16,8 +17,8 @@ export function AboutVKH() {
         sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
         Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
         inceptos hymenaeos. Integer tempor. Praesent id justo in neque elementum
-        ultrices. Aenean fermentum risus id tortor. In convallis.{" "}
-      </p>
-    </div>
+        ultrices. Aenean fermentum risus id tortor. In convallis.
+      </Paragraph>
+    </DarkSection>
   );
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import { Footer } from './components/footer';
-import { Header } from './components/header';
-import { VKHinString } from './components/vkhInString';
-import { AboutVKH } from './components/aboutVKH';
-import { Events } from './components/events';
-import { InstagramPanel } from './components/instagramPanel';
+import { Footer } from './sections/footer';
+import { Header } from './sections/header';
+import { VKHinString } from './sections/vkhInString';
+import { AboutVKH } from './sections/aboutVKH';
+import { Events } from './sections/events';
+import { InstagramPanel } from './sections/instagramPanel';
 
 function App() {
   return (
