@@ -118,7 +118,7 @@ export const Card = styled.div`
     align-self: center;
   }
   height: 100px;
-  background-color: white;
+  background-color: ${props => props.bg};
   color: gray;
   align-self: center;
   text-align: left;

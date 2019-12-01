@@ -1,4 +1,5 @@
 import React from "react";
+import COLORS from '../constants/colors'
 export default function Arrow() {
   return (
     <div
@@ -21,7 +22,7 @@ export default function Arrow() {
             y1="2.40413e-07"
             x2="49.5"
             y2="96"
-            stroke="#C96567"
+            stroke={COLORS.PRIMARY}
             stroke-width="11"
           />
           <line
@@ -29,7 +30,7 @@ export default function Arrow() {
             y1="102.536"
             x2="4.46447"
             y2="54.5355"
-            stroke="#C96567"
+            stroke={COLORS.PRIMARY}
             stroke-width="10"
           />
           <line
@@ -37,7 +38,7 @@ export default function Arrow() {
             y1="102.464"
             x2="93.4645"
             y2="54.4645"
-            stroke="#C96567"
+            stroke={COLORS.PRIMARY}
             stroke-width="10"
           />
         </svg>

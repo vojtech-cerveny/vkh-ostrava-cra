@@ -7,21 +7,58 @@ import instagram4 from '../images/instagram4.jpg'
 import instagram5 from '../images/instagram5.jpg'
 import instagram6 from '../images/instagram6.jpg'
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 export function InstagramPanel() {
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    centerMode: true,
+    centerPadding: '60px',
+    autoplay: true,
+    autoplaySpeed: 2000,
+    swipe: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+
+  };
+
   return (
     <LightSection>
       <Container>
         <H2>Instagram</H2>
-        <InstaRow>
-          <Column xs="12" md="4"><Cell><Image src={instagram1}/></Cell></Column>
-          <Column xs="12" md="4"><Cell><Image src={instagram2}/></Cell></Column>
-          <Column xs="12" md="4"><Cell><Image src={instagram3}/></Cell></Column>
-        </InstaRow>
-        <InstaRow>
-          <Column xs="12" md="4"><Cell><Image src={instagram4}/></Cell></Column>
-          <Column xs="12" md="4"><Cell><Image src={instagram5}/></Cell></Column>
-          <Column xs="12" md="4"><Cell><Image src={instagram6}/></Cell></Column>
-        </InstaRow>
+        <Slider {...settings}>
+          <Cell><Image src={instagram1}/></Cell>
+          <Cell><Image src={instagram2}/></Cell>
+          <Cell><Image src={instagram3}/></Cell>
+          <Cell><Image src={instagram4}/></Cell>
+          <Cell><Image src={instagram5}/></Cell>
+          <Cell><Image src={instagram6}/></Cell>
+        </Slider>
       </Container>
     </LightSection>
   );

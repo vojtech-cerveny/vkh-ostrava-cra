@@ -6,7 +6,8 @@ import {
   Row,
   Cell,
   Image,
-  Container
+  Container,
+  Column
 } from "../css/style";
 import Fade from "react-reveal/Fade";
 
@@ -35,34 +36,46 @@ export function AboutVKH() {
           convallis.
         </Paragraph>
         <Row>
-          <Cell>
-            <Fade left>
-              <Image src={one} alt={"something"} />
-            </Fade>
-          </Cell>
-          <Cell>
-            <Paragraph>Something interesting to say</Paragraph>
-          </Cell>
+          <Column xs="12" md="6">
+            <Cell>
+              <Fade left>
+                <Image src={one} alt={"something"} />
+              </Fade>
+            </Cell>
+          </Column>
+          <Column xs="12" md="6">
+            <Cell>
+              <Paragraph>Something interesting to say</Paragraph>
+            </Cell>
+          </Column>
         </Row>
         <Row>
-          <Cell>
-            <Paragraph>Something interesting to say</Paragraph>
-          </Cell>
-          <Cell>
-            <Fade right>
-              <Image src={two} alt={"something"} />
-            </Fade>
-          </Cell>
+          <Column xs="12" md="6">
+            <Cell>
+              <Paragraph>Something interesting to say</Paragraph>
+            </Cell>
+          </Column>
+          <Column xs="12" md="6">
+            <Cell>
+              <Fade right>
+                <Image src={two} alt={"something"} />
+              </Fade>
+            </Cell>
+          </Column>
         </Row>
         <Row>
-          <Cell>
-            <Fade left>
-              <Image src={three} alt={"something"} />
-            </Fade>
-          </Cell>
-          <Cell>
-            <Paragraph>Something interesting to say</Paragraph>
-          </Cell>
+          <Column xs="12" md="6">
+            <Cell>
+              <Fade left>
+                <Image src={three} alt={"something"} />
+              </Fade>
+            </Cell>
+          </Column>
+          <Column xs="12" md="6">
+            <Cell>
+              <Paragraph>Something interesting to say</Paragraph>
+            </Cell>
+          </Column>
         </Row>
       </Container>
     </LightSection>

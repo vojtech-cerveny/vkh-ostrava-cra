@@ -2,7 +2,7 @@ import React from "react";
 import Typing from "react-typing-animation";
 
 import { DarkSection, Row, Word, Cell, Column, Container } from "../css/style";
-
+import COLORS from '../constants/colors'
 const strings = {
   v: ["Vysokoškolské", "Vynikající", "Výjimečné"],
   k: ["Katolické", "Kapacitní", "Kované"],
@@ -14,7 +14,7 @@ export function VKHinString() {
   const delay = 3500;
   const hideCursor = true;
   const style = {
-    color: "red"
+    color: COLORS.TEXT_HIGHTLIGHTED
   };
   return (
     <DarkSection id="scrollTo">
