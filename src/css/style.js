@@ -38,7 +38,7 @@ export const HeaderSection = styled.div`
 
 export const LogoText = styled.div`
 font-family: 'Bebas Neue';
-  font-size: 2.5rem;
+  font-size: 6vw;
   text-transform: uppercase;
   color: ${COLORS.PRIMARY};
   display: flex;
@@ -46,6 +46,7 @@ font-family: 'Bebas Neue';
   flex-direction: column;
   width: 40%;
   padding-left: 20px;
+  text-shadow: 2px 2px black;
   `;
 
 export const WordContainer = styled.div`
@@ -98,12 +99,17 @@ export const Row = styled.div`
 
 export const InstaRow = styled(Row)`
 
+@media only screen and (min-width: 768px) {
+    width: 90%;
+    height: 27%;
+    align-self: center;
+  }
+
 `
 
 export const Image = styled.img`
   align-self: center;
   width: 100%;
-  height: 100%;
 `
 
 export const Card = styled.div`

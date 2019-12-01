@@ -17,7 +17,7 @@ export function VKHinString() {
     color: "red"
   };
   return (
-    <DarkSection>
+    <DarkSection id="scrollTo">
       <Container>
         <Row>
           <Column xs="12" md="4">

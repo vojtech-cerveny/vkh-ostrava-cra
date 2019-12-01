@@ -1,7 +1,7 @@
 export default {
-  PRIMARY: '#ffd500',
+  PRIMARY: '#c96567',
   SECONDARY: '',
-  BG_DARK: '#46344e',
+  BG_DARK: '#314455',
   BG_LIGHT: '',
 
 }
