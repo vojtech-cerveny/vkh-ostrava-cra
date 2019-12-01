@@ -1,35 +1,35 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components'
 import headerImg from '../images/header.jpg'
 import COLORS from '../constants/colors'
 
 export const Paragraph = styled.p`
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   text-align: justify;
-`;
+`
 
-export const H2 = styled.h2``;
+export const H2 = styled.h2``
 
 const Section = css`
   padding: 2rem 0;
-`;
+`
 
 export const LightSection = styled.div`
   ${Section}
   background-color: white
-`;
+`
 
 export const DarkSection = styled.div`
   ${Section}
-  background-color: ${COLORS.BG_DARK};
+  ${({ bg }) =>
+    bg ? `background-color:${bg}` : `background-color:${COLORS.BG_DARK}`};
   color: white;
-`;
-
+`
 
 export const HeaderSection = styled.div`
   background-image: url(${headerImg});
-  background-position: center; 
-  background-size: cover; 
+  background-position: center;
+  background-size: cover;
   min-height: 30vh;
   display: flex;
   flex-direction: row;
@@ -37,7 +37,7 @@ export const HeaderSection = styled.div`
 `
 
 export const LogoText = styled.div`
-font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue';
   font-size: 6vw;
   text-transform: uppercase;
   color: ${COLORS.PRIMARY};
@@ -47,7 +47,7 @@ font-family: 'Bebas Neue';
   width: 40%;
   padding-left: 20px;
   text-shadow: 2px 2px black;
-  `;
+`
 
 export const WordContainer = styled.div`
   display: flex;
@@ -98,13 +98,11 @@ export const Row = styled.div`
 `
 
 export const InstaRow = styled(Row)`
-
-@media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     width: 90%;
     height: 27%;
     align-self: center;
   }
-
 `
 
 export const Image = styled.img`
@@ -125,42 +123,42 @@ export const Card = styled.div`
   transition: all 0.25s ease-in;
   border-bottom: 5px solid transparent;
   border-radius: 2px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
   padding: 10px;
   margin: 10px 0;
-&:hover {
-  -webkit-transform: translateY(-5px);
+  &:hover {
+    -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
     border: none;
     border-bottom: 5px solid #2196fe;
   }
-`;
+`
 
 function getWidthString(span) {
-  if (!span) return;
-  let width = span / 12*100;
+  if (!span) return
+  let width = (span / 12) * 100
   return `width: ${width}%;`
 }
 
 export const Column = styled.div`
-  ${({xs}) => (xs? getWidthString(xs) : "width: 100%")};
+  ${({ xs }) => (xs ? getWidthString(xs) : 'width: 100%')};
   @media only screen and (min-width: 768px) {
-    ${({sm}) => sm && getWidthString(sm)};
+    ${({ sm }) => sm && getWidthString(sm)};
   }
 
   @media only screen and (min-width: 992px) {
-    ${({md}) => md && getWidthString(md)};
+    ${({ md }) => md && getWidthString(md)};
   }
 
   @media only screen and (min-width: 1200px) {
-    ${({lg}) => lg && getWidthString(lg)};
+    ${({ lg }) => lg && getWidthString(lg)};
   }
 `
 
 export const Container = styled.div`
   width: 90%;
   margin: 0 auto;
-  max-width: 1280px;  
+  max-width: 1280px;
 
   @media only screen and (min-width: 768px) {
     width: 90%;

@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.css';
-import { Footer } from './sections/footer';
-import { Header } from './sections/header';
-import { VKHinString } from './sections/vkhInString';
-import { AboutVKH } from './sections/aboutVKH';
-import { Events } from './sections/events';
-import { InstagramPanel } from './sections/instagramPanel';
+import React from 'react'
+import './App.css'
+import { Footer } from './sections/footer'
+import { Header } from './sections/header'
+import { VKHinString } from './sections/vkhInString'
+import { AboutVKH } from './sections/aboutVKH'
+import { Events } from './sections/events'
+import { InstagramPanel } from './sections/instagramPanel'
 
 function App() {
   return (
@@ -17,8 +17,7 @@ function App() {
       <InstagramPanel />
       <Footer />
     </div>
-    
-  );
+  )
 }
 
-export default App;
+export default App

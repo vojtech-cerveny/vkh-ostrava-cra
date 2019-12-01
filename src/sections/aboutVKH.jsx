@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Paragraph,
   H2,
@@ -7,13 +7,13 @@ import {
   Cell,
   Image,
   Container,
-  Column
-} from "../css/style";
-import Fade from "react-reveal/Fade";
+  Column,
+} from '../css/style'
+import Fade from 'react-reveal/Fade'
 
-import one from "../images/1.png";
-import two from "../images/2.png";
-import three from "../images/3.png";
+import one from '../images/1.png'
+import two from '../images/2.png'
+import three from '../images/3.png'
 
 export function AboutVKH() {
   return (
@@ -39,7 +39,7 @@ export function AboutVKH() {
           <Column xs="12" md="6">
             <Cell>
               <Fade left>
-                <Image src={one} alt={"something"} />
+                <Image src={one} alt={'something'} />
               </Fade>
             </Cell>
           </Column>
@@ -58,7 +58,7 @@ export function AboutVKH() {
           <Column xs="12" md="6">
             <Cell>
               <Fade right>
-                <Image src={two} alt={"something"} />
+                <Image src={two} alt={'something'} />
               </Fade>
             </Cell>
           </Column>
@@ -67,7 +67,7 @@ export function AboutVKH() {
           <Column xs="12" md="6">
             <Cell>
               <Fade left>
-                <Image src={three} alt={"something"} />
+                <Image src={three} alt={'something'} />
               </Fade>
             </Cell>
           </Column>
@@ -79,5 +79,5 @@ export function AboutVKH() {
         </Row>
       </Container>
     </LightSection>
-  );
+  )
 }

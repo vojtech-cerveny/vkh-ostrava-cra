@@ -8,6 +8,5 @@ export default {
     LECTURE: '#59C8D0',
     FUN: '#FABE28',
     PRAY: '#B11623',
-  }
-
+  },
 }

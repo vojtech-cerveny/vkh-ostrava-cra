@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 export default function Octogen(props) {
-  const color = props.color;
+  const color = props.color
   return (
     <svg
       width="75"
@@ -68,5 +68,5 @@ export default function Octogen(props) {
       />
       <line x1="115" y1="6" x2="276" y2="6" stroke="black" stroke-width="10" />
     </svg>
-  );
+  )
 }

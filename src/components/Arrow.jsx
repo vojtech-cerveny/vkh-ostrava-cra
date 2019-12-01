@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
 import COLORS from '../constants/colors'
 export default function Arrow() {
   return (
     <div
       style={{
-        position: "absolute",
-        left: "47%",
-        top: "90%",
-        zIndex: 100
+        position: 'absolute',
+        left: '47%',
+        top: '90%',
+        zIndex: 100,
       }}
     >
       <a href="#scrollTo">
@@ -44,5 +44,5 @@ export default function Arrow() {
         </svg>
       </a>
     </div>
-  );
+  )
 }
