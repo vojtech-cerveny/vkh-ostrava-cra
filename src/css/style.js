@@ -1,11 +1,10 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 import headerImg from '../images/header.jpg'
 import COLORS from '../constants/colors'
 
 export const Paragraph = styled.p`
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 20px;
-  padding: 0 10rem;
+  margin-bottom: 20px; 
   text-align: justify;
 `;
 
@@ -69,15 +68,101 @@ export const Word = styled.div`
   min-height: 100px;
 `
 
-export const WordStyle = css`
-  font-family: 'Bebas Neue';
-  font-size: 5rem;
-  text-transform: uppercase;
+const CellDimesion = css`
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   flex-basis: 100%;
   flex: 1;
+`
+
+export const CellCss = css`
+  ${CellDimesion}
+  font-family: 'Bebas Neue';
+  font-size: 5rem;
+  text-transform: uppercase;
+
   min-height: 100px;
+`
+
+export const Cell = styled.div`
+  ${CellDimesion}
+`
+
+export const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+`
+
+export const InstaRow = styled(Row)`
+
+`
+
+export const Image = styled.img`
+  align-self: center;
+  width: 100%;
+  height: 100%;
+`
+
+export const Card = styled.div`
+  @media only screen and (min-width: 768px) {
+    width: 90%;
+    align-self: center;
+  }
+  height: 100px;
+  background-color: white;
+  color: gray;
+  align-self: center;
+  text-align: left;
+  transition: all 0.25s ease-in;
+  border-bottom: 5px solid transparent;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
+  padding: 10px;
+  margin: 10px 0;
+&:hover {
+  -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    border: none;
+    border-bottom: 5px solid #2196fe;
+  }
+`;
+
+function getWidthString(span) {
+  if (!span) return;
+  let width = span / 12*100;
+  return `width: ${width}%;`
+}
+
+export const Column = styled.div`
+  ${({xs}) => (xs? getWidthString(xs) : "width: 100%")};
+  @media only screen and (min-width: 768px) {
+    ${({sm}) => sm && getWidthString(sm)};
+  }
+
+  @media only screen and (min-width: 992px) {
+    ${({md}) => md && getWidthString(md)};
+  }
+
+  @media only screen and (min-width: 1200px) {
+    ${({lg}) => lg && getWidthString(lg)};
+  }
+`
+
+export const Container = styled.div`
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1280px;  
+
+  @media only screen and (min-width: 768px) {
+    width: 90%;
+    align-self: center;
+  }
+
+  @media only screen and (min-width: 992px) {
+    width: 80%;
+    align-self: center;
+  }
 `
