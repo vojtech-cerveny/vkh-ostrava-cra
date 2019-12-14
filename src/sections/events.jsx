@@ -9,7 +9,7 @@ export function Events() {
         <Row>
           <Column xs="12" md="4" lg="4">
             <Event
-              text="Event 0 - Treba Programovani ve skupinach "
+              text="Event 0 - Treba Programovani ve skupinach"
               bg="#B11623"
             />
           </Column>

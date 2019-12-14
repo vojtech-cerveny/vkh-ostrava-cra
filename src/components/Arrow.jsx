@@ -23,7 +23,7 @@ export default function Arrow() {
             x2="49.5"
             y2="96"
             stroke={COLORS.PRIMARY}
-            stroke-width="11"
+            strokeWidth="11"
           />
           <line
             x1="52.4645"
@@ -31,7 +31,7 @@ export default function Arrow() {
             x2="4.46447"
             y2="54.5355"
             stroke={COLORS.PRIMARY}
-            stroke-width="10"
+            strokeWidth="10"
           />
           <line
             x1="45.4645"
@@ -39,7 +39,7 @@ export default function Arrow() {
             x2="93.4645"
             y2="54.4645"
             stroke={COLORS.PRIMARY}
-            stroke-width="10"
+            strokeWidth="10"
           />
         </svg>
       </a>

@@ -6,9 +6,28 @@ export const Paragraph = styled.p`
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 20px;
   text-align: justify;
+  font-size: 1.5rem;
+  line-height: 2rem;
 `
 
-export const H2 = styled.h2``
+export const H2 = styled.h2`
+  font-family: 'Bebas Neue';
+  font-size: 4.5rem;
+  margin: 2rem 0;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+`
+
+export const H3 = styled.h3`
+  font-family: 'Bebas Neue';
+  font-size: 3.5rem;
+  line-height: 3rem;
+  margin: 0rem;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+`
 
 const Section = css`
   padding: 2rem 0;
@@ -16,7 +35,7 @@ const Section = css`
 
 export const LightSection = styled.div`
   ${Section}
-  background-color: white
+  background-color: white;
 `
 
 export const DarkSection = styled.div`
@@ -158,15 +177,45 @@ export const Column = styled.div`
 export const Container = styled.div`
   width: 90%;
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1100px;
 
-  @media only screen and (min-width: 768px) {
-    width: 90%;
+  @media only screen and (max-width: 768px) {
+    width: 95%;
+    margin: 0 auto;
     align-self: center;
   }
+`
 
-  @media only screen and (min-width: 992px) {
-    width: 80%;
-    align-self: center;
+export const BoxStyle = styled.div`
+  border-radius: 3px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+  min-height: 350px;
+  padding: 25px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1em;
+  text-align: justify;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.3s;
+  color: black;
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  @media only screen and (max-width: 768px) {
+    min-height: unset;
+    padding: 25px 15px;
+  }
+
+  & h3 {
+    margin-bottom: 1rem;
+    min-height: 100px;
+    vertical-align: center;
+
+    @media only screen and (max-width: 768px) {
+      min-height: unset;
+    }
   }
 `

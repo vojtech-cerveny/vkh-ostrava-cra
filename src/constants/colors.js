@@ -5,7 +5,7 @@ export default {
   BG_LIGHT: '',
   TEXT_HIGHTLIGHTED: '#16ffbd',
   EVENTS: {
-    LECTURE: '#59C8D0',
+    TALK: '#59C8D0',
     FUN: '#FABE28',
     PRAY: '#B11623',
   },
