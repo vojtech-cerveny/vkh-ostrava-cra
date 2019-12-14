@@ -114,6 +114,10 @@ export const Row = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  @media only screen and (max-width: 768px) {
+    ${({ reverse }) => (reverse ? 'flex-direction: column-reverse;' : '')};
+  }
 `
 
 export const InstaRow = styled(Row)`
@@ -163,6 +167,7 @@ export const Column = styled.div`
   ${({ xs }) => (xs ? getWidthString(xs) : 'width: 100%')};
   @media only screen and (min-width: 768px) {
     ${({ sm }) => sm && getWidthString(sm)};
+    flex-direction: column-reverse;
   }
 
   @media only screen and (min-width: 992px) {

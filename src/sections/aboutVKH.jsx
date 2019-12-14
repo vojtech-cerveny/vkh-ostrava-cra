@@ -13,16 +13,13 @@ import {
 } from '../css/style'
 import Box from '../components/Box'
 import TEXT from '../constants/texts'
-import one from '../images/1.png'
-import two from '../images/2.png'
-import three from '../images/3.png'
 
 export function AboutVKH() {
   return (
     <div>
       <LightSection>
         <Container>
-          <img src="logoVKH.png" width="300px" />
+          <img src="logoVKH.png" width="300px" alt="Logo VKH" />
           <Paragraph>{TEXT.aboutVKH}</Paragraph>
         </Container>
       </LightSection>
@@ -47,7 +44,7 @@ export function AboutVKH() {
             <Column xs="12" md="6">
               <Cell>
                 <Fade left>
-                  <Image src={one} alt={'something'} />
+                  <Image src="lidi1.png" alt={'something'} />
                 </Fade>
               </Cell>
             </Column>
@@ -57,7 +54,7 @@ export function AboutVKH() {
               </Cell>
             </Column>
           </Row>
-          <Row>
+          <Row reverse>
             <Column xs="12" md="6">
               <Cell>
                 <Paragraph>citat</Paragraph>
@@ -66,7 +63,7 @@ export function AboutVKH() {
             <Column xs="12" md="6">
               <Cell>
                 <Fade right>
-                  <Image src={two} alt={'something'} />
+                  <Image src="lidi2.png" alt={'something'} />
                 </Fade>
               </Cell>
             </Column>
@@ -75,7 +72,7 @@ export function AboutVKH() {
             <Column xs="12" md="6">
               <Cell>
                 <Fade left>
-                  <Image src={three} alt={'something'} />
+                  <Image src="lidi3.png" alt={'something'} />
                 </Fade>
               </Cell>
             </Column>
