@@ -2,7 +2,7 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 import {
   Paragraph,
-  H2,
+  H3,
   LightSection,
   Row,
   Cell,
@@ -13,6 +13,15 @@ import {
 } from '../css/style'
 import Box from '../components/Box'
 import TEXT from '../constants/texts'
+
+const h3Style = {
+  fontWeight: '100',
+  lineHeight: '3.5rem',
+  display: 'flex',
+  justifyContent: 'center',
+  alignContent: 'center',
+  flexDirection: 'column',
+}
 
 export function AboutVKH() {
   return (
@@ -25,7 +34,7 @@ export function AboutVKH() {
       </LightSection>
       <DarkSection>
         <Container>
-          <Row>
+          <Row style={{ flex: 1, alignItems: 'stretch' }}>
             <Column xs="12" md="4">
               <Box section={TEXT.pray} />
             </Column>
@@ -40,7 +49,7 @@ export function AboutVKH() {
       </DarkSection>
       <LightSection>
         <Container>
-          <Row>
+          <Row style={{ flex: 1 }}>
             <Column xs="12" md="6">
               <Cell>
                 <Fade left>
@@ -48,16 +57,22 @@ export function AboutVKH() {
                 </Fade>
               </Cell>
             </Column>
-            <Column xs="12" md="6">
+            <Column xs="12" md="6" style={h3Style}>
               <Cell>
-                <Paragraph>citat</Paragraph>
+                <H3 style={h3Style}>
+                  „VKH je pro mě společenství mladých věřících studentů, mezi
+                  kterými se cítím přijatý“
+                </H3>
               </Cell>
             </Column>
           </Row>
           <Row reverse>
-            <Column xs="12" md="6">
+            <Column xs="12" md="6" style={h3Style}>
               <Cell>
-                <Paragraph>citat</Paragraph>
+                <H3>
+                  „Do VéKaHáčka chodím, protože chci vytěžit se zese to nejlepší
+                  jak při darování krve, tak ve schole“
+                </H3>
               </Cell>
             </Column>
             <Column xs="12" md="6">
@@ -76,9 +91,12 @@ export function AboutVKH() {
                 </Fade>
               </Cell>
             </Column>
-            <Column xs="12" md="6">
+            <Column xs="12" md="6" style={h3Style}>
               <Cell>
-                <Paragraph>Blablabla citat</Paragraph>
+                <H3>
+                  „Mše, modlitba, kamarádi, akce, zajímavé přednášky, "pivo" po
+                  programu to je pro me VKH“
+                </H3>
               </Cell>
             </Column>
           </Row>
