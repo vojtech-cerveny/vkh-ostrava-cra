@@ -1,20 +1,16 @@
 import React from 'react'
 import './App.css'
 import { Footer } from './sections/footer'
-import { Header } from './sections/header'
-import { VKHinString } from './sections/vkhInString'
-import { AboutVKH } from './sections/aboutVKH'
-import { Events } from './sections/events'
-import { InstagramPanel } from './sections/instagramPanel'
+import { FirstSection } from './newSections/FirstSection'
+import { SecondSection } from './newSections/SecondSection'
+import { ParallaxOne } from './newSections/ParallaxOne'
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <VKHinString />
-      <AboutVKH />
-      <Events />
-      <InstagramPanel />
+      <FirstSection />
+      <ParallaxOne />
+      <SecondSection />
       <Footer />
     </div>
   )
