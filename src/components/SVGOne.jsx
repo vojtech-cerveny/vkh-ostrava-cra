@@ -11,7 +11,15 @@ import colors from '../constants/colors'
 
 export default function SVGOne() {
   return (
-    <div style={{ position: 'relative', height: '800px' }}>
+    <div
+      style={{
+        position: 'relative',
+        height: '800px',
+        width: '1100px',
+        left: '-128.43px',
+        margin: '0 auto',
+      }}
+    >
       <Octogen
         left=" 100px"
         top="400px"
