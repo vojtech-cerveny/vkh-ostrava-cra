@@ -1,9 +1,9 @@
 import React from 'react'
-import { H3, Container, LightSection } from '../css/style'
+import { H3, Container, DarkSection } from '../css/style'
 
 export function Footer() {
   return (
-    <LightSection>
+    <DarkSection>
       <Container>
         <div
           style={{
@@ -17,6 +17,6 @@ export function Footer() {
           <H3>VKH OSTRAVA</H3>
         </div>
       </Container>
-    </LightSection>
+    </DarkSection>
   )
 }

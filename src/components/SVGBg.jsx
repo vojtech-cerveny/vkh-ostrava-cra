@@ -5,6 +5,8 @@ export default function SVGBg(props) {
   return (
     <div
       style={{
+        display: 'flex',
+        alignItems: 'center',
         height: `${ratio * 1.2}px`,
         width: `${ratio}px`,
         background: `url(${svg}) no-repeat`,

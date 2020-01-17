@@ -4,6 +4,7 @@ import { Footer } from './sections/footer'
 import { FirstSection } from './newSections/FirstSection'
 import { SecondSection } from './newSections/SecondSection'
 import { ParallaxOne } from './newSections/ParallaxOne'
+import { InstagramSection } from './newSections/InstagramSection'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <FirstSection />
       <ParallaxOne />
       <SecondSection />
+      <InstagramSection />
       <Footer />
     </div>
   )

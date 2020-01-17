@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 import headerImg from '../images/header.jpg'
 import COLORS from '../constants/colors'
+import colors from '../constants/colors'
 
 export const Paragraph = styled.p`
   font-family: 'Montserrat', sans-serif;
@@ -12,7 +13,7 @@ export const Paragraph = styled.p`
 
 export const H2 = styled.h2`
   font-family: 'Bebas Neue';
-  font-size: 4.5rem;
+  font-size: 6.5rem;
   margin: 2rem 0;
   font-style: normal;
   font-weight: normal;
@@ -27,8 +28,23 @@ export const H3 = styled.h3`
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
+  color: ${colors.DARK_GREEN};
 `
 
+const Layout = styled.div`
+  position: relative;
+`
+
+export const Behind = styled.div`
+  position: relative;
+  width: 100%;
+`
+export const Infront = styled.div`
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+`
 const Section = css`
   padding: 2rem 0;
 `
@@ -182,7 +198,7 @@ export const Column = styled.div`
 export const Container = styled.div`
   width: 90%;
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1300px;
 
   @media only screen and (max-width: 768px) {
     width: 95%;

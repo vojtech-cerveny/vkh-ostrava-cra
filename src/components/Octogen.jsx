@@ -1,72 +1,30 @@
 import React from 'react'
+import Parallax from 'react-rellax'
+
+import { GrayOctagon } from '../css/octagons'
 
 export default function Octogen(props) {
-  const color = props.color
+  const color = props.color || '#C1C1C1'
+  const ratio = props.ratio || 1
+  const width = ratio * 214
+  const height = ratio * 186
+  const speed = props.speed || 3
   return (
-    <svg
-      width="75"
-      height="75"
-      viewBox="0 0 390 390"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <line
-        x1="6"
-        y1="115"
-        x2="5.99999"
-        y2="276"
-        stroke="black"
-        strokeWidth="10"
-      />
-      <line
-        x1="385"
-        y1="115"
-        x2="385"
-        y2="276"
-        stroke="black"
-        strokeWidth="10"
-      />
-      <line
-        x1="4.46447"
-        y1="118.309"
-        x2="118.309"
-        y2="4.46445"
-        stroke="black"
-        strokeWidth="10"
-      />
-      <line
-        x1="272.536"
-        y1="4.46447"
-        x2="386.38"
-        y2="118.309"
-        stroke="black"
-        strokeWidth="10"
-      />
-      <line
-        x1="4.53553"
-        y1="272.464"
-        x2="118.38"
-        y2="386.309"
-        stroke="black"
-        strokeWidth="10"
-      />
-      <line
-        x1="115"
-        y1="383"
-        x2="276"
-        y2="383"
-        stroke={color}
-        strokeWidth="14"
-      />
-      <line
-        x1="271.05"
-        y1="384.894"
-        x2="384.894"
-        y2="271.05"
-        stroke={color}
-        strokeWidth="14"
-      />
-      <line x1="115" y1="6" x2="276" y2="6" stroke="black" strokeWidth="10" />
-    </svg>
+    <GrayOctagon top={props.top} left={props.left} zIndex={props.zIndex}>
+      <Parallax speed={speed}>
+        <svg
+          width={width}
+          height={height}
+          viewBox="0 0 214 186"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M52.2076 2.93812C53.1004 1.39737 54.7452 0.447724 56.5259 0.444925L157.725 0.285895C159.514 0.283083 161.169 1.23645 162.063 2.78589L212.51 90.1613C213.404 91.7108 213.403 93.6201 212.506 95.1681L161.768 182.73C160.875 184.271 159.231 185.22 157.45 185.223L56.2505 185.382C54.4614 185.385 52.8071 184.432 51.9125 182.882L1.46626 95.5066C0.571692 93.9572 0.573192 92.0478 1.47019 90.4998L52.2076 2.93812Z"
+            fill={color}
+          />
+        </svg>
+      </Parallax>
+    </GrayOctagon>
   )
 }
