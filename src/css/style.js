@@ -7,13 +7,13 @@ export const Paragraph = styled.p`
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 20px;
   text-align: justify;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
 `
 
 export const H2 = styled.h2`
   font-family: 'Bebas Neue';
-  font-size: 6.5rem;
+  font-size: 8.5rem;
   margin: 2rem 0;
   font-style: normal;
   font-weight: normal;
@@ -238,5 +238,39 @@ export const BoxStyle = styled.div`
     @media only screen and (max-width: 768px) {
       min-height: unset;
     }
+  }
+`
+
+export const Blockquote = styled.blockquote`
+  padding: 10px 25px;
+  width: 480px;
+  text-align: center;
+  position: relative;
+
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 34px;
+  text-align: center;
+  z-index: 10;
+
+  :before,
+  :after {
+    position: absolute;
+    font-size: 100px;
+    color: black;
+    /* font-style: normal; */
+    font-weight: 700;
+  }
+  :before {
+    content: '„';
+    bottom: 30px;
+    left: 10px;
+  }
+  :after {
+    content: '“';
+    top: 0;
+    right: 10px;
   }
 `

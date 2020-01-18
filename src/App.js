@@ -10,8 +10,9 @@ function App() {
   return (
     <div className="App">
       <FirstSection />
-      <ParallaxOne />
       <SecondSection />
+      <ParallaxOne />
+
       <InstagramSection />
       <Footer />
     </div>

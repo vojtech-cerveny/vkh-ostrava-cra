@@ -6,8 +6,8 @@ import { GrayOctagon } from '../css/octagons'
 export default function Octogen(props) {
   const color = props.color || '#C1C1C1'
   const ratio = props.ratio || 1
-  const width = ratio * 214
-  const height = ratio * 186
+  const width = ratio * 100
+  const height = ratio * 86.9158878505
   const speed = props.speed || 3
   return (
     <GrayOctagon top={props.top} left={props.left} zIndex={props.zIndex}>

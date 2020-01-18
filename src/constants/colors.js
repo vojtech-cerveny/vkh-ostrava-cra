@@ -9,6 +9,8 @@ export default {
   LIGHT_GREEN: '#00B9BD',
   BG_DARK: '#026670',
   BG_LIGHT: '',
+  LIGHT_GRAY100: '#EDEDED',
+  LIGHT_GRAY200: '#dbdbdb',
   TEXT_HIGHTLIGHTED: '#16ffbd',
   EVENTS: {
     TALK: '#59C8D0',

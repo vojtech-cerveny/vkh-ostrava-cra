@@ -14,24 +14,50 @@ export default function SVGOne() {
     <div
       style={{
         position: 'relative',
-        height: '800px',
+        height: '900px',
         width: '1100px',
         left: '-128.43px',
         margin: '0 auto',
+        top: '100px',
       }}
     >
       <Octogen
         left=" 100px"
-        top="400px"
-        ratio={1.0}
+        top="450px"
+        ratio={2.1}
         zIndex={1}
         speed={2}
         color={colors.GREEN}
       />
+
+      <Octogen
+        left=" 266px"
+        top="500px"
+        ratio={1.1}
+        zIndex={2}
+        speed={3}
+        color={colors.RED}
+      />
+      <Octogen
+        left=" 300px"
+        top="300px"
+        ratio={3.2}
+        zIndex={-4}
+        speed={'-2'}
+        color={colors.ORANGE}
+      />
+      <Octogen
+        left=" 400px"
+        top="1000px"
+        ratio={1.1}
+        zIndex={1}
+        speed={6}
+        color={colors.LIGHT_GREEN}
+      />
       <Octogen
         left=" 600px"
         top="400px"
-        ratio={0.5}
+        ratio={1.1}
         zIndex={-4}
         speed={1}
         color={colors.RED}
@@ -39,50 +65,26 @@ export default function SVGOne() {
       <Octogen
         left=" 700px"
         top="600px"
-        ratio={0.7}
-        zIndex={9}
-        speed={1}
-        color={colors.RED}
-      />
-      <Octogen
-        left=" 300px"
-        top="400px"
-        ratio={0.5}
-        zIndex={2}
-        speed={3}
-        color={colors.RED}
-      />
-      <Octogen
-        left=" 400px"
-        top="800px"
-        ratio={0.5}
-        zIndex={1}
-        speed={4}
-        color={colors.LIGHT_GREEN}
-      />
-      <Octogen
-        left="1000px"
-        top="400px"
-        ratio={0.5}
-        zIndex={1}
-        speed={2}
-        color={colors.LIGHT_GREEN}
-      />
-      <Octogen
-        left=" 300px"
-        top="300px"
         ratio={1.5}
-        zIndex={-4}
-        speed={'-3'}
-        color={colors.ORANGE}
+        zIndex={9}
+        speed={2}
+        color={colors.RED}
       />
       <Octogen
         left=" 800px"
         top="400px"
-        ratio={0.5}
+        ratio={1.1}
         zIndex={12}
         speed={'-2'}
         color={colors.RED}
+      />
+      <Octogen
+        left="1000px"
+        top="400px"
+        ratio={1.1}
+        zIndex={1}
+        speed={2}
+        color={colors.LIGHT_GREEN}
       />
       <img
         src={one}

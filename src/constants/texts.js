@@ -20,4 +20,9 @@ export default {
       'Osobní rozvoj mladých je důležitý. Proto se snažíme k rozvoji přispívat zajímavými hosty, kteří mají co nabídnout. Navštívili nás hosté jako o. Miroslav Herold, dr. Maria Fridrichová nebo pomocný biskup naší diecéze o. Martin David. ',
     color: COLORS.EVENTS.TALK,
   },
+  quotes: [
+    'VKH je pro mě společenství mladých věřících studentů, mezi kterými se cítím přijatý',
+    'Do VéKaHáčka chodím, protože chci vytěžit se zese to nejlepší jak při darování krve, tak ve schole',
+    'Mše, modlitba, kamarádi, akce, zajímavé přednášky, "pivo" po programu to je pro me VKH',
+  ],
 }
