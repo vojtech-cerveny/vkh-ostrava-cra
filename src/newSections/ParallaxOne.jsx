@@ -96,13 +96,13 @@ export function ParallaxOne() {
           src="images/quotes/down.png"
           alt="down quote"
         />
-        <Quote style={{ position: 'absolute', left: '217px', top: '495px' }}>
+        <Quote style={{ position: 'absolute', left: '217px', top: '685px' }}>
           {TEXTS.quotes[0]}
         </Quote>
-        <Quote style={{ position: 'absolute', left: '532px', top: '117px' }}>
+        <Quote style={{ position: 'absolute', left: '1395px', top: '305px' }}>
           {TEXTS.quotes[1]}
         </Quote>
-        <Quote style={{ position: 'absolute', left: '1130px', top: '800px' }}>
+        <Quote style={{ position: 'absolute', left: '1355px', top: '648px' }}>
           {TEXTS.quotes[2]}
         </Quote>
       </Behind>
