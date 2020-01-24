@@ -5,6 +5,7 @@ import Quote from '../components/Quote'
 import TEXTS from '../constants/texts'
 import { Behind, Infront } from '../css/style'
 import colors from '../constants/colors'
+import BorderOctagon from '../components/BorderOctagon'
 
 export function ParallaxOne() {
   return (
@@ -46,18 +47,25 @@ export function ParallaxOne() {
         />
         <Octogen
           left="600px"
-          top="2000px"
+          top="1500px"
           ratio={1}
-          zIndex={-1}
-          speed={4}
+          zIndex={3}
+          speed={3}
           color={colors.RED}
+        />
+        <BorderOctagon
+          left="951px"
+          top="746px"
+          ratio={3}
+          zIndex={2}
+          color={colors.GREEN}
         />
         <NormalOctogen
           left="751px"
           top="146px"
           ratio={4}
           zIndex={2}
-          color={colors.RED}
+          color={colors.ORANGE}
         />
         <NormalOctogen
           left="416px"
