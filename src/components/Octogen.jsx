@@ -9,8 +9,14 @@ export default function Octogen(props) {
   const width = ratio * 100
   const height = ratio * 86.9158878505
   const speed = props.speed || 3
+  const opacity = props.opacity || 1
   return (
-    <GrayOctagon top={props.top} left={props.left} zIndex={props.zIndex}>
+    <GrayOctagon
+      top={props.top}
+      left={props.left}
+      zIndex={props.zIndex}
+      opacity={opacity}
+    >
       <Parallax speed={speed}>
         <svg
           width={width}
