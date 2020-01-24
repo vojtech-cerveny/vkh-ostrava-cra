@@ -8,6 +8,7 @@ import six from './one/six.png'
 import seven from './one/seven.png'
 import Octogen from './Octogen'
 import colors from '../constants/colors'
+import BorderOctagon from './BorderOctagon'
 
 export default function SVGOne() {
   return (
@@ -22,37 +23,39 @@ export default function SVGOne() {
       }}
     >
       <Octogen
-        left=" 100px"
+        left=" -30px"
         top="450px"
         ratio={2.1}
         zIndex={1}
         speed={2}
-        color={colors.GREEN}
+        color={colors.LIGHT_GREEN}
       />
 
       <Octogen
-        left=" 266px"
-        top="500px"
-        ratio={1.1}
+        left=" 250px"
+        top="1000px"
+        ratio={2.3}
         zIndex={2}
         speed={3}
         color={colors.RED}
       />
       <Octogen
-        left=" 300px"
-        top="300px"
-        ratio={3.2}
-        zIndex={-4}
-        speed={'-2'}
-        color={colors.ORANGE}
+        left=" 400px"
+        top="500px"
+        ratio={2.2}
+        zIndex={0}
+        speed={1}
+        color={colors.LIGHT_GRAY100}
+        opacity={0.5}
       />
       <Octogen
-        left=" 400px"
-        top="1000px"
-        ratio={1.1}
+        left=" 380px"
+        top="1300px"
+        ratio={1.9}
         zIndex={1}
-        speed={6}
-        color={colors.LIGHT_GREEN}
+        speed={7}
+        color={colors.LIGHT_GRAY100}
+        opacity={0.7}
       />
       <Octogen
         left=" 600px"
@@ -63,28 +66,78 @@ export default function SVGOne() {
         color={colors.RED}
       />
       <Octogen
-        left=" 700px"
-        top="600px"
+        left=" 530px"
+        top="220px"
+        ratio={2.1}
+        zIndex={-2}
+        speed={2}
+        color={colors.ORANGE}
+      />
+      <Octogen
+        left=" 960px"
+        top="700px"
         ratio={1.5}
-        zIndex={9}
-        speed={2}
-        color={colors.RED}
+        zIndex={3}
+        speed={7}
+        color={colors.LIGHT_GRAY200}
+        opacity={0.5}
       />
-      <Octogen
-        left=" 800px"
-        top="400px"
-        ratio={1.1}
-        zIndex={12}
-        speed={'-2'}
-        color={colors.RED}
-      />
-      <Octogen
-        left="1000px"
-        top="400px"
-        ratio={1.1}
+      <BorderOctagon
+        left="850px"
+        top="300px"
+        ratio={2}
         zIndex={1}
-        speed={2}
+        color={colors.RED}
+      />
+      <BorderOctagon
+        left="850px"
+        top="300px"
+        ratio={1.5}
+        zIndex={-2}
         color={colors.LIGHT_GREEN}
+      />
+      <BorderOctagon
+        left="730px"
+        top="250px"
+        ratio={2}
+        zIndex={-2}
+        color={colors.ORANGE}
+      />
+      <BorderOctagon
+        left="700px"
+        top="80px"
+        ratio={2.2}
+        zIndex={-2}
+        color={colors.LIGHT_GREEN}
+      />
+      <BorderOctagon
+        left="700px"
+        top="500px"
+        ratio={2.4}
+        zIndex={-2}
+        color={colors.LIGHT_GREEN}
+      />
+      <BorderOctagon
+        left="180px"
+        top="790px"
+        ratio={2.4}
+        zIndex={-2}
+        color={colors.LIGHT_GREEN}
+      />
+      <BorderOctagon
+        left="300px"
+        top="250px"
+        ratio={2.4}
+        zIndex={-2}
+        color={colors.RED}
+      />
+      <Octogen
+        left="930px"
+        top="400px"
+        ratio={2}
+        zIndex={1}
+        speed={3}
+        color={colors.ORANGE}
       />
       <img
         src={one}
@@ -95,7 +148,7 @@ export default function SVGOne() {
           height: '312.84px',
           left: '128.43px',
           top: '53.51px',
-          zIndex: -1,
+          zIndex: -3,
         }}
       />
       <img
@@ -119,7 +172,7 @@ export default function SVGOne() {
           height: '178px',
           left: '825px',
           top: '130px',
-          zIndex: -1,
+          zIndex: 5,
         }}
       />
       <img
@@ -131,7 +184,7 @@ export default function SVGOne() {
           height: '424px',
           left: '785px',
           top: '379px',
-          zIndex: 10,
+          zIndex: -3,
         }}
       />
       <img
@@ -143,7 +196,7 @@ export default function SVGOne() {
           height: '305px',
           left: '492px',
           top: '608px',
-          zIndex: -1,
+          zIndex: -3,
         }}
       />
       <img
