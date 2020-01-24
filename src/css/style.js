@@ -248,8 +248,6 @@ export const Blockquote = styled.blockquote`
   position: relative;
 
   font-family: Montserrat;
-  font-style: italic;
-  font-weight: 800;
   font-size: 35px;
   line-height: 34px;
   text-align: center;
