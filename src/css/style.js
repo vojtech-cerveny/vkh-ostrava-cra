@@ -257,7 +257,7 @@ export const Blockquote = styled.blockquote`
   :after {
     position: absolute;
     font-size: 100px;
-    color: black;
+    color: gray;
     /* font-style: normal; */
     font-weight: 700;
   }
