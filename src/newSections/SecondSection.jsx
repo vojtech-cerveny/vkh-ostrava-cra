@@ -32,7 +32,7 @@ export function SecondSection() {
         style={{ position: 'absolute', top: '1100px', left: '35%' }}
       />
       <Infront>
-        <Container style={{ paddingTop: '250px' }}>
+        <Container id="about" style={{ paddingTop: '250px' }}>
           <H2>VKH OSTRAVA</H2>
           <Paragraph style={{ padding: '0px 100px' }}>
             {TEXT.aboutVKH}

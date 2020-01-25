@@ -272,3 +272,132 @@ export const Blockquote = styled.blockquote`
     right: 10px;
   }
 `
+
+export const NavBar = styled.div`
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 0px 2px gray;
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  display: flex; 
+  justify-content: flex-end;
+
+  a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 24px 22px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  a:hover {
+    /* background-color: ${colors.RED}; */
+    color: black;
+  }
+
+  a.active {
+    background-color: ${colors.GREEN};
+    color: white;
+  }
+
+  a::before{
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: ${colors.RED};
+    position: relative;
+    top: -10px;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+
+  a:hover::before{
+    width: 100%;
+    
+  }
+`
+export const NavItem = styled.a`
+  padding: 30px 20px 0 150px;
+  font-family: 'Bebas Neue';
+  font-size: 3.5rem;
+  line-height: 3rem;
+  margin: 0rem;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: black;
+  align-self: flex-end;
+`
+
+export const Hamburger = styled.div`
+  color: ${colors.BG_DARK};
+
+  #loading-bar-left {
+    animation: loading-bar-morph 5s linear 0.1s infinite;
+    transform-origin: center;
+    color: blue;
+  }
+  #loading-bar-middle {
+    animation: loading-bar-morph 5s linear 0.2s infinite;
+    transform-origin: center;
+  }
+  #loading-bar-right {
+    animation: loading-bar-morph 5s linear 0.4s infinite;
+    transform-origin: center;
+  }
+
+  @keyframes loading-bar-morph {
+    0% {
+      transform: scaleX(1);
+    }
+    25% {
+      transform: scaleX(0.7);
+    }
+    50% {
+      transform: scaleX(0.9);
+    }
+    75% {
+      transform: scaleX(0.7);
+    }
+  }
+`
+
+export const Switch = styled.label`
+  cursor: pointer;
+  background: #7c7c7c;
+  padding: 7px;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  div {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0fr 1fr 1fr;
+    transition: 0.2s;
+    //ICYMI, pseudo elements are treated as grid items
+    &::after {
+      content: '';
+      border-radius: 50%;
+      background: #15273b;
+      grid-column: 2;
+      transition: background-color 0.3s;
+    }
+  }
+  input:checked {
+    + .switch {
+      grid-template-columns: 1fr 1fr 0fr;
+      &::after {
+        background-color: white;
+      }
+    }
+  }
+`

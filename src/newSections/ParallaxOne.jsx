@@ -9,7 +9,7 @@ import BorderOctagon from '../components/BorderOctagon'
 
 export function ParallaxOne() {
   return (
-    <div style={{ margin: '0 auto' }}>
+    <div id="quotes" style={{ margin: '0 auto' }}>
       <Behind
         style={{
           position: 'relative',

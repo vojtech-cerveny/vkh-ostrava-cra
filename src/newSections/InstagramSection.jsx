@@ -46,7 +46,7 @@ export function InstagramSection() {
   }
 
   return (
-    <Container style={{ paddingBottom: '30px' }}>
+    <Container id="instagram" style={{ paddingBottom: '30px' }}>
       <H2>Instagram</H2>
       <Slider {...settings}>
         <Cell>
