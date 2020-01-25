@@ -30,7 +30,6 @@ export default function SVGOne() {
         speed={2}
         color={colors.LIGHT_GREEN}
       />
-
       <Octogen
         left=" 250px"
         top="1000px"
@@ -41,19 +40,43 @@ export default function SVGOne() {
       />
       <Octogen
         left=" 400px"
+        top="1300px"
+        ratio={1}
+        zIndex={-2}
+        speed={7}
+        color={colors.RED}
+      />
+      <Octogen
+        left=" 650px"
+        top="1000px"
+        ratio={0.7}
+        zIndex={1}
+        speed={6}
+        color={colors.DARK_GREEN}
+      />
+      <Octogen
+        left=" 350px"
+        top="900px"
+        ratio={0.9}
+        zIndex={9}
+        speed={5}
+        color={colors.ORANGE}
+      />
+      <Octogen
+        left=" 400px"
         top="500px"
         ratio={2.2}
-        zIndex={0}
+        zIndex={-3}
         speed={1}
         color={colors.LIGHT_GRAY100}
         opacity={0.5}
       />
       <Octogen
         left=" 380px"
-        top="1300px"
+        top="1100px"
         ratio={1.9}
         zIndex={1}
-        speed={7}
+        speed={5}
         color={colors.LIGHT_GRAY100}
         opacity={0.7}
       />
@@ -86,6 +109,7 @@ export default function SVGOne() {
         left="850px"
         top="300px"
         ratio={2}
+        speed={1}
         zIndex={1}
         color={colors.RED}
       />
@@ -93,13 +117,15 @@ export default function SVGOne() {
         left="850px"
         top="300px"
         ratio={1.5}
+        speed={1}
         zIndex={-2}
         color={colors.LIGHT_GREEN}
       />
       <BorderOctagon
         left="730px"
-        top="250px"
+        top="380px"
         ratio={2}
+        speed={3}
         zIndex={-2}
         color={colors.ORANGE}
       />
@@ -107,6 +133,7 @@ export default function SVGOne() {
         left="700px"
         top="80px"
         ratio={2.2}
+        speed={1}
         zIndex={-2}
         color={colors.LIGHT_GREEN}
       />
@@ -114,6 +141,7 @@ export default function SVGOne() {
         left="700px"
         top="500px"
         ratio={2.4}
+        speed={1.5}
         zIndex={-2}
         color={colors.LIGHT_GREEN}
       />
@@ -121,13 +149,15 @@ export default function SVGOne() {
         left="180px"
         top="790px"
         ratio={2.4}
+        speed={2}
         zIndex={-2}
         color={colors.LIGHT_GREEN}
       />
       <BorderOctagon
-        left="300px"
+        left="330px"
         top="250px"
-        ratio={2.4}
+        ratio={2}
+        speed={2}
         zIndex={-2}
         color={colors.RED}
       />
