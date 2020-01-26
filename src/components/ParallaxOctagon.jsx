@@ -3,7 +3,7 @@ import Parallax from 'react-rellax'
 
 import { GrayOctagon } from '../css/octagons'
 
-export default function Octogen(props) {
+export default function ParallaxOctagon(props) {
   const color = props.color || '#C1C1C1'
   const ratio = props.ratio || 1
   const width = ratio * 100

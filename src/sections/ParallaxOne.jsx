@@ -1,6 +1,6 @@
 import React from 'react'
-import NormalOctogen from '../components/NormalOctogen'
-import Octogen from '../components/Octogen'
+import NormalOctogen from '../components/NormalOctagon'
+import ParallaxOctagon from '../components/ParallaxOctagon'
 import Quote from '../components/Quote'
 import TEXTS from '../constants/texts'
 import { Behind, Infront } from '../css/style'
@@ -21,7 +21,7 @@ export function ParallaxOne() {
           transform: 'scale(0.8)',
         }}
       >
-        <Octogen
+        <ParallaxOctagon
           left="1300px"
           top="900px"
           ratio={1.3}
@@ -29,7 +29,7 @@ export function ParallaxOne() {
           speed={2.4}
           color={colors.ORANGE}
         />
-        <Octogen
+        <ParallaxOctagon
           left="461px"
           top="1415px"
           ratio={3.5}
@@ -37,7 +37,7 @@ export function ParallaxOne() {
           speed={3}
           color={colors.DARK_GREEN}
         />
-        <Octogen
+        <ParallaxOctagon
           left="750px"
           top="1250px"
           ratio={3.5}
@@ -45,7 +45,7 @@ export function ParallaxOne() {
           speed={3}
           color={colors.ORANGE}
         />
-        <Octogen
+        <ParallaxOctagon
           left="1050px"
           top="1000px"
           ratio={2}
@@ -54,7 +54,7 @@ export function ParallaxOne() {
           color={colors.LIGHT_GRAY200}
           opacity={0.5}
         />
-        <Octogen
+        <ParallaxOctagon
           left="950px"
           top="1200px"
           ratio={2}
@@ -63,7 +63,7 @@ export function ParallaxOne() {
           color={colors.LIGHT_GRAY200}
           opacity={0.5}
         />
-        <Octogen
+        <ParallaxOctagon
           left="430px"
           top="1400px"
           ratio={2}
@@ -72,7 +72,7 @@ export function ParallaxOne() {
           color={colors.LIGHT_GRAY200}
           opacity={0.7}
         />
-        <Octogen
+        <ParallaxOctagon
           left="350px"
           top="1650px"
           ratio={2}
@@ -81,7 +81,7 @@ export function ParallaxOne() {
           color={colors.LIGHT_GRAY200}
           opacity={0.4}
         />
-        <Octogen
+        <ParallaxOctagon
           left="500px"
           top="2200px"
           ratio={2}
@@ -90,7 +90,7 @@ export function ParallaxOne() {
           color={colors.LIGHT_GRAY200}
           opacity={0.3}
         />
-        <Octogen
+        <ParallaxOctagon
           left="1200px"
           top="2250px"
           ratio={2}
@@ -99,7 +99,7 @@ export function ParallaxOne() {
           color={colors.LIGHT_GRAY200}
           opacity={0.3}
         />
-        <Octogen
+        <ParallaxOctagon
           left="1120px"
           top="2460px"
           ratio={2}
@@ -108,7 +108,7 @@ export function ParallaxOne() {
           color={colors.LIGHT_GRAY200}
           opacity={0.3}
         />
-        <Octogen
+        <ParallaxOctagon
           left="1200px"
           top="2800px"
           ratio={2}
@@ -117,7 +117,7 @@ export function ParallaxOne() {
           color={colors.LIGHT_GRAY200}
           opacity={0.3}
         />
-        <Octogen
+        <ParallaxOctagon
           left="920px"
           top="2850px"
           ratio={1.3}

@@ -1,14 +1,8 @@
 import React from 'react'
 
-import one from './one/one.png'
-import two from './one/two.png'
-import three from './one/three.png'
-import four from './one/four.png'
-import six from './one/six.png'
-import seven from './one/seven.png'
-import Octogen from './Octogen'
-import colors from '../constants/colors'
+import ParallaxOctagon from './ParallaxOctagon'
 import BorderOctagon from './BorderOctagon'
+import colors from '../constants/colors'
 
 export default function SVGOne() {
   return (
@@ -22,7 +16,7 @@ export default function SVGOne() {
         top: '100px',
       }}
     >
-      <Octogen
+      <ParallaxOctagon
         left=" -30px"
         top="450px"
         ratio={2.1}
@@ -30,7 +24,7 @@ export default function SVGOne() {
         speed={2}
         color={colors.LIGHT_GREEN}
       />
-      <Octogen
+      <ParallaxOctagon
         left=" 250px"
         top="1000px"
         ratio={2.3}
@@ -38,7 +32,7 @@ export default function SVGOne() {
         speed={3}
         color={colors.RED}
       />
-      <Octogen
+      <ParallaxOctagon
         left=" 400px"
         top="1300px"
         ratio={1}
@@ -46,7 +40,7 @@ export default function SVGOne() {
         speed={7}
         color={colors.RED}
       />
-      <Octogen
+      <ParallaxOctagon
         left=" 650px"
         top="1000px"
         ratio={0.7}
@@ -54,7 +48,7 @@ export default function SVGOne() {
         speed={6}
         color={colors.DARK_GREEN}
       />
-      <Octogen
+      <ParallaxOctagon
         left=" 350px"
         top="900px"
         ratio={0.9}
@@ -62,7 +56,7 @@ export default function SVGOne() {
         speed={5}
         color={colors.ORANGE}
       />
-      <Octogen
+      <ParallaxOctagon
         left=" 400px"
         top="500px"
         ratio={2.2}
@@ -71,7 +65,7 @@ export default function SVGOne() {
         color={colors.LIGHT_GRAY100}
         opacity={0.5}
       />
-      <Octogen
+      <ParallaxOctagon
         left=" 380px"
         top="1100px"
         ratio={1.9}
@@ -80,7 +74,7 @@ export default function SVGOne() {
         color={colors.LIGHT_GRAY100}
         opacity={0.7}
       />
-      <Octogen
+      <ParallaxOctagon
         left=" 600px"
         top="400px"
         ratio={1.1}
@@ -88,7 +82,7 @@ export default function SVGOne() {
         speed={1}
         color={colors.RED}
       />
-      <Octogen
+      <ParallaxOctagon
         left=" 530px"
         top="220px"
         ratio={2.1}
@@ -96,7 +90,7 @@ export default function SVGOne() {
         speed={2}
         color={colors.ORANGE}
       />
-      <Octogen
+      <ParallaxOctagon
         left=" 960px"
         top="700px"
         ratio={1.5}
@@ -161,7 +155,7 @@ export default function SVGOne() {
         zIndex={-2}
         color={colors.RED}
       />
-      <Octogen
+      <ParallaxOctagon
         left="930px"
         top="400px"
         ratio={2}
@@ -170,7 +164,7 @@ export default function SVGOne() {
         color={colors.ORANGE}
       />
       <img
-        src={one}
+        src="images/svgone/one.png"
         alt="deskovky"
         style={{
           position: 'absolute',
@@ -182,7 +176,7 @@ export default function SVGOne() {
         }}
       />
       <img
-        src={two}
+        src="images/svgone/two.png"
         alt="mse svata"
         style={{
           position: 'absolute',
@@ -194,7 +188,7 @@ export default function SVGOne() {
         }}
       />
       <img
-        src={three}
+        src="images/svgone/three.png"
         alt="kriz"
         style={{
           position: 'absolute',
@@ -206,7 +200,7 @@ export default function SVGOne() {
         }}
       />
       <img
-        src={four}
+        src="images/svgone/four.png"
         alt="zpevaci"
         style={{
           position: 'absolute',
@@ -218,7 +212,7 @@ export default function SVGOne() {
         }}
       />
       <img
-        src={six}
+        src="images/svgone/six.png"
         alt="kost"
         style={{
           position: 'absolute',
@@ -230,7 +224,7 @@ export default function SVGOne() {
         }}
       />
       <img
-        src={seven}
+        src="images/svgone/seven.png"
         alt="diskuze"
         style={{
           position: 'absolute',

@@ -1,5 +1,5 @@
 import React from 'react'
-import NormalOctogen from './NormalOctogen'
+import NormalOctagon from './NormalOctagon'
 import colors from '../constants/colors'
 export function CalendareEvent(props) {
   const event = props.event
@@ -10,7 +10,7 @@ export function CalendareEvent(props) {
         position: 'relative',
       }}
     >
-      <NormalOctogen
+      <NormalOctagon
         left=" -40px"
         top="-50px"
         ratio={1}
