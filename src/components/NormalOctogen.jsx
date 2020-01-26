@@ -1,6 +1,4 @@
 import React from 'react'
-import Parallax from 'react-rellax'
-
 import { GrayOctagon } from '../css/octagons'
 
 export default function NormalOctogen(props) {
