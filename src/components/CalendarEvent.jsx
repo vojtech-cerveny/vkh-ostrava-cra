@@ -1,6 +1,6 @@
 import React from 'react'
 import NormalOctagon from './NormalOctagon'
-import colors from '../constants/colors'
+import colors from '../styles/colors'
 export function CalendareEvent(props) {
   const event = props.event
   console.log(event)

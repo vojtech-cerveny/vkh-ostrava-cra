@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { NavItem, Hamburger, Switch } from '../css/style'
-import colors from '../constants/colors'
+import { NavItem, Hamburger, Switch } from '../styles/style'
+import colors from '../styles/colors'
 
 export function Navbar() {
   const [menu, setMenu] = useState(false)

@@ -1,5 +1,5 @@
 import React from 'react'
-import { GrayOctagon } from '../css/octagons'
+import { GrayOctagon } from '../styles/octagons'
 
 export default function NormalOctogen(props) {
   const color = props.color || '#C1C1C1'

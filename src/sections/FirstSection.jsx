@@ -1,12 +1,12 @@
 import React from 'react'
 import Parallax from 'react-rellax'
-import { H2, H3, Container } from '../css/style'
+import { H2, H3, Container } from '../styles/style'
 
 import OctagonRight from '../components/OctagonRight'
-import colors from '../constants/colors'
+import colors from '../styles/colors'
 import SVGOne from '../components/SVGOne'
 
-export function FirstSection() {
+export default function FirstSection() {
   return (
     <>
       <div

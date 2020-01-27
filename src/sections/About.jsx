@@ -1,12 +1,12 @@
 import React from 'react'
 import Parallax from 'react-rellax'
-import { H2, Paragraph, Behind, Infront, Container } from '../css/style'
+import { H2, Paragraph, Behind, Infront, Container } from '../styles/style'
 import TEXT from '../constants/texts'
 import OctagonLeft from '../components/OctagonLeft'
 import OctagonParallax from '../components/OctagonRightParallax'
-import colors from '../constants/colors'
+import colors from '../styles/colors'
 
-export function SecondSection() {
+export default function About() {
   return (
     <Behind style={{ paddingTop: '300px' }}>
       <Parallax style={{ position: 'absolute' }} speed={1}>

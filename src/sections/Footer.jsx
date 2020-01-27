@@ -1,7 +1,7 @@
 import React from 'react'
-import { H3, Container, DarkSection } from '../css/style'
+import { H3, Container, DarkSection } from '../styles/style'
 
-export function Footer() {
+export default function Footer() {
   return (
     <DarkSection>
       <Container>

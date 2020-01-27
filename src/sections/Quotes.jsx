@@ -3,11 +3,11 @@ import NormalOctogen from '../components/NormalOctagon'
 import ParallaxOctagon from '../components/ParallaxOctagon'
 import Quote from '../components/Quote'
 import TEXTS from '../constants/texts'
-import { Behind, Infront } from '../css/style'
-import colors from '../constants/colors'
+import { Behind } from '../styles/style'
+import colors from '../styles/colors'
 import BorderOctagon from '../components/BorderOctagon'
 
-export function ParallaxOne() {
+export default function Quotes() {
   return (
     <div id="quotes" style={{ margin: '0 auto' }}>
       <Behind

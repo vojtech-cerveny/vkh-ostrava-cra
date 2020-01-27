@@ -2,7 +2,7 @@ import React from 'react'
 
 import ParallaxOctagon from './ParallaxOctagon'
 import BorderOctagon from './BorderOctagon'
-import colors from '../constants/colors'
+import colors from '../styles/colors'
 
 export default function SVGOne() {
   return (

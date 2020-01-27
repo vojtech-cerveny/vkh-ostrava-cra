@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { CalendareEvent } from './CalendarEvent'
-import { H2 } from '../css/style'
+import { H2 } from '../styles/style'
 
 export function Calendar() {
   const [data, setData] = useState({ items: [] })

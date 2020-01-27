@@ -1,7 +1,7 @@
 import React from 'react'
 import Parallax from 'react-rellax'
 
-import { GrayOctagon } from '../css/octagons'
+import { GrayOctagon } from '../styles/octagons'
 
 export default function BorderOctagon(props) {
   const color = props.color || '#C1C1C1'

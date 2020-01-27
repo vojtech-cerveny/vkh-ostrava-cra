@@ -1,10 +1,11 @@
 import React from 'react'
 import './App.css'
-import { Footer } from './sections/Footer'
-import { FirstSection } from './sections/FirstSection'
-import { SecondSection } from './sections/SecondSection'
-import { ParallaxOne } from './sections/ParallaxOne'
-import { Instagram } from './sections/Instagram'
+import Footer from './sections/Footer'
+import FirstSection from './sections/FirstSection'
+import About from './sections/About'
+import Quotes from './sections/Quotes'
+import Instagram from './sections/Instagram'
+
 import { Navbar } from './components/Navbar'
 import { Calendar } from './components/Calendar'
 
@@ -14,8 +15,8 @@ function App() {
       <Navbar />
 
       <FirstSection />
-      <SecondSection />
-      <ParallaxOne />
+      <About />
+      <Quotes />
       <Calendar />
       <Instagram />
       <Footer />

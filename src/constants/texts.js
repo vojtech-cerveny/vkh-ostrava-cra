@@ -1,4 +1,4 @@
-import COLORS from './colors'
+import COLORS from '../styles/colors'
 export default {
   aboutVKH:
     'Vysokoškolské Katolické Hnutí Ostrava je společenství mladých lidí, kteří studují vysokou školu nebo nedávno absolvovali. Společně těžíme ze sebe to nejlepší! Mladým lidem nabízíme kromě společenství možnost duchovního růstu, ale také čas pro sebevzdělávání či zábavu. Společně se modlíme, zpíváme, bavíme, vyrážíme do přírody či za kulturou. Pokud máš čas, neváhej a dojdi na Studentskou mši svatou do kostela Sv. Cyrila a Metoděje v Ostravě – Pustkovci. Scházíme se každé úterý od 19:00.',
