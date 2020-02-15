@@ -3,6 +3,8 @@ html {
 }
 
 body {
+  background-color: black;
+  color: #a8a8a8;
   margin: 0;
   font-family: 'Montserrat', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -13,8 +15,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.slider {
-  height: 100vh !important;
 }

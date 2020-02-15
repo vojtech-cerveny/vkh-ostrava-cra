@@ -1,13 +1,5 @@
 import React from 'react'
-import {
-  H2,
-  LightSection,
-  InstaRow,
-  Cell,
-  Container,
-  Column,
-  Image,
-} from '../css/style'
+import { H2, LightSection, Cell, Container, Image } from '../styles/style'
 import instagram1 from '../images/instagram1.jpg'
 import instagram2 from '../images/instagram2.jpg'
 import instagram3 from '../images/instagram3.jpg'
@@ -19,7 +11,7 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-export function InstagramPanel() {
+export default function Instagram() {
   var settings = {
     dots: true,
     infinite: true,
