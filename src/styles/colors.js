@@ -13,8 +13,25 @@ export default {
   LIGHT_GRAY200: '#dbdbdb',
   TEXT_HIGHTLIGHTED: '#16ffbd',
   EVENTS: {
-    TALK: '#59C8D0',
-    FUN: '#FABE28',
-    PRAY: '#B11623',
+    TALK: {
+      DESC: 'TALK',
+      PRIMARY: 'rgb(251,105,0)',
+      LIGHT: 'rgba(251,105,0,0.37)',
+    },
+    FUN: {
+      DESC: 'FUN',
+      PRIMARY: 'rgb(0,185,189)',
+      LIGHT: 'rgba(0,185,189,0.37)',
+    },
+    PRAY: {
+      DESC: 'PRAY',
+      PRIMARY: 'rgb(246,55,0)',
+      LIGHT: 'rgba(246,55,0,0.37)',
+    },
+    OTHERS: {
+      DESC: 'DESC',
+      PRIMARY: 'rbg(189,186,186)',
+      LIGHT: 'rbga(189,186,186,0.36)',
+    },
   },
 }

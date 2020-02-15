@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { CalendareEvent } from './CalendarEvent'
-import { H2 } from '../styles/style'
+import { CalendarEvent } from './CalendarEvent/CalendarEvent.jsx'
+import { H2, Container } from '../styles/style'
 
 export function Calendar() {
   const [data, setData] = useState({ items: [] })
+  let counterReverse = 1
 
   useEffect(() => {
     async function fetchData() {
       const result = await axios(
-        'https://www.googleapis.com/calendar/v3/calendars/vkhostrava.cz_i1n5jgnlrg7lr1o7889pb5quis%40group.calendar.google.com/events?key=AIzaSyDFRf-VTqYLCelf41yNzmkb-ZlRg-8gKP0'
+        'https://www.googleapis.com/calendar/v3/calendars/vkhostrava.cz_o4gjrck3s2cnq03guci1hlb06c@group.calendar.google.com/events?orderBy=startTime&key=AIzaSyDFRf-VTqYLCelf41yNzmkb-ZlRg-8gKP0&singleEvents=true&timeMin=' +
+          new Date().toISOString()
       )
       setData(result.data)
     }
@@ -20,11 +22,14 @@ export function Calendar() {
   return (
     <>
       <H2 style={{ paddingTop: '200px' }}>UDÁLOSTI</H2>
-      <div>
-        {data.items.map(event => (
-          <CalendareEvent key={event.id} event={event} />
-        ))}
-      </div>
+      <Container>
+        {data.items.map(event => {
+          const isReversed = counterReverse++ % 2 == 0
+          return (
+            <CalendarEvent key={event.id} event={event} reverse={isReversed} />
+          )
+        })}
+      </Container>
     </>
   )
 }

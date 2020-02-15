@@ -8,4 +8,19 @@ export const GrayOctagon = styled.div`
   top: ${props => props.top || '0px'};
   z-index: ${props => props.zIndex || 1};
   opacity: ${props => props.opacity || 1};
+  transform: ${props => {
+    if (props.rotated) {
+      return 'rotate(90deg)'
+    }
+  }};
+`
+
+export const Octagon = styled.div`
+  z-index: ${props => props.zIndex || 1};
+  opacity: ${props => props.opacity || 1};
+  transform: ${props => {
+    if (props.rotated) {
+      return 'rotate(90deg)'
+    }
+  }};
 `

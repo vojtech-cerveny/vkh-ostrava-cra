@@ -1,14 +1,15 @@
 import React from 'react'
-import { GrayOctagon } from '../styles/octagons'
+import { Octagon } from '../styles/octagons'
 
 export default function NormalOctogen(props) {
   const color = props.color || '#C1C1C1'
   const ratio = props.ratio || 1
   const width = ratio * 100
   const height = ratio * 86.9158878505
+  const rotated = props.rotated
 
   return (
-    <GrayOctagon top={props.top} left={props.left} zIndex={props.zIndex}>
+    <Octagon zIndex={props.zIndex} rotated={rotated}>
       <svg
         width={width}
         height={height}
@@ -21,6 +22,6 @@ export default function NormalOctogen(props) {
           fill={color}
         />
       </svg>
-    </GrayOctagon>
+    </Octagon>
   )
 }
