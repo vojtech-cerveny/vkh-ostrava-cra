@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { NavItem, Hamburger, Switch } from '../styles/style'
+import { CancelIcon } from './icons/CancelIcon'
 import colors from '../styles/colors'
 
 export function Navbar() {
@@ -89,7 +90,13 @@ export function Navbar() {
           display: 'flex',
         }}
       >
-        <div onClick={() => setMenu(false)}> Disable </div>
+        <div
+          style={{ padding: '20px 20px 0 0', textAlign: 'right' }}
+          onClick={() => setMenu(false)}
+        >
+          {' '}
+          <CancelIcon />{' '}
+        </div>
         <NavItem>Rada</NavItem>
         <NavItem>Kalendář</NavItem>
         <NavItem>FOTOGALERIE</NavItem>
@@ -112,6 +119,7 @@ export function Navbar() {
           backgroundColor: 'rgba(0,0,0,0.5)',
           zIndex: 997,
         }}
+        onClick={() => setMenu(false)}
       ></div>
     </>
   )
