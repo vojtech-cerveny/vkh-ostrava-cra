@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { NavItem, Hamburger, Switch } from '../styles/style'
-import { CancelIcon } from './icons/CancelIcon'
-import colors from '../styles/colors'
+import { Hamburger } from './Hamburger'
+import { CancelIcon } from '../icons/CancelIcon'
+import { NavItem, NavigationPanel, Switch } from './NavBar.styled'
 
 export function Navbar() {
   const [menu, setMenu] = useState(false)
@@ -21,81 +21,27 @@ export function Navbar() {
   return (
     <>
       <div>
-        <Hamburger
-          onClick={() => setMenu(true)}
-          style={{
-            position: 'fixed',
-            right: '20px',
-            top: '20px',
-            zIndex: 20,
-            cursor: 'pointer',
-          }}
-        >
-          <svg
-            id="loading-bar"
-            xmlns="http://www.w3.org/2000/svg"
-            width="50"
-            height="36"
-            viewBox="0 0 50 36"
-          >
-            <g>
-              <rect
-                id="loading-bar-left"
-                width="45"
-                height="7"
-                fill={colors.BG_DARK}
-              />
-              <rect
-                id="loading-bar-middle"
-                width="45"
-                height="7"
-                y="14"
-                fill={colors.BG_DARK}
-              />
-              <rect
-                id="loading-bar-right"
-                width="45"
-                height="7"
-                y="28"
-                fill={colors.BG_DARK}
-              />
-            </g>
-          </svg>
-        </Hamburger>
+        <div onClick={() => setMenu(true)}>
+          <Hamburger />
+        </div>
 
-        <Switch
-          style={{
-            position: 'fixed',
-            right: '20px',
-            top: '70px',
-            zIndex: 20,
-            cursor: 'pointer',
-          }}
-        >
+        <Switch>
           <input type="checkbox" onClick={() => setDark(dark)} />
           <div className="switch"></div>
         </Switch>
       </div>
-      <div
+      <NavigationPanel
         style={{
-          height: '100%',
-          backgroundColor: 'white',
-          position: 'fixed',
-          right: '0',
           visibility: menu ? 'visible' : 'hidden',
           transition: `all 400ms ${menu ? 'ease-in' : 'ease-out'}`,
           transform: menu ? 'none' : 'translate(  100%, 0)',
-          zIndex: 999,
-          flexDirection: 'column',
-          display: 'flex',
         }}
       >
         <div
           style={{ padding: '20px 20px 0 0', textAlign: 'right' }}
           onClick={() => setMenu(false)}
         >
-          {' '}
-          <CancelIcon />{' '}
+          <CancelIcon />
         </div>
         <NavItem>Rada</NavItem>
         <NavItem>Kalendář</NavItem>
@@ -104,7 +50,7 @@ export function Navbar() {
         <NavItem>Duchovní život v Ostravě</NavItem>
         <NavItem>Kontakt</NavItem>
         <NavItem>VKH v ČR</NavItem>
-      </div>
+      </NavigationPanel>
       <div
         className="sidenav-overlay"
         style={{
