@@ -1,5 +1,24 @@
+import React from 'react'
 import styled from 'styled-components'
 import colors from '../../styles/colors'
+
+import { Link } from 'react-router-dom'
+
+const SLink = styled(Link)`
+  text-decoration: none;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+
+  color: ${colors.GREEN};
+`
+
+export const StyledLink = props => <SLink {...props} />
 
 export const StyledHamburger = styled.div`
   color: ${colors.BG_DARK};
@@ -49,7 +68,7 @@ export const NavigationPanel = styled.div`
   display: flex;
 `
 
-export const NavItem = styled.a`
+export const NavItem = styled.div`
   padding: 30px 20px 0 150px;
   font-family: 'Bebas Neue';
   font-size: 3.5rem;

@@ -4,7 +4,6 @@ import instagram1 from '../images/instagram1.jpg'
 import instagram2 from '../images/instagram2.jpg'
 import instagram3 from '../images/instagram3.jpg'
 import instagram4 from '../images/instagram4.jpg'
-import instagram5 from '../images/instagram5.jpg'
 import instagram6 from '../images/instagram6.jpg'
 
 import Slider from 'react-slick'
@@ -61,9 +60,6 @@ export default function Instagram() {
           </Cell>
           <Cell>
             <Image src={instagram4} />
-          </Cell>
-          <Cell>
-            <Image src={instagram5} />
           </Cell>
           <Cell>
             <Image src={instagram6} />

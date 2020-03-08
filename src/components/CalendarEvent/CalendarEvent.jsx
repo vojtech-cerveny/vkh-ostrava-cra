@@ -13,7 +13,6 @@ import { FacebookIcon } from '../icons/FacebookIcon'
 
 export function CalendarEvent(props) {
   const event = props.event
-  console.log(props.reverse)
   if (event.description) {
     event.fb = event.description.match(
       /(?:(?:http|https):\/\/)?(?:www.)?facebook.com\/\S[^"]*/
@@ -24,7 +23,6 @@ export function CalendarEvent(props) {
     )
     event.description = event.description.replace(/<\/?[^>]+(>|$)/g, '')
   }
-  console.log(event)
   let color = colors.EVENTS.FUN
 
   const showLocation = () => {
@@ -61,7 +59,6 @@ export function CalendarEvent(props) {
     color = colors.EVENTS.TALK
   if (new RegExp(pray.join('|')).test(event.description.toLowerCase()))
     color = colors.EVENTS.PRAY
-  console.log(color)
   return (
     <Card reverse={props.reverse}>
       <CalendarOctagon ratio={1.2} color={color.PRIMARY} type={color.DESC} />
