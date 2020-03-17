@@ -24,7 +24,7 @@ export function Calendar() {
       <H2 style={{ paddingTop: '200px' }}>UDÁLOSTI</H2>
       <Container>
         {data.items.map(event => {
-          const isReversed = counterReverse++ % 2 == 0
+          const isReversed = counterReverse++ % 2 === 0
           return (
             <CalendarEvent key={event.id} event={event} reverse={isReversed} />
           )

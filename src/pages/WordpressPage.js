@@ -16,7 +16,7 @@ export default function WordpressPage(props) {
       setPagePost(result.data.content.rendered)
     }
     fetchData()
-  }, [])
+  }, [props.id])
 
   return (
     <Behind style={{ paddingTop: '300px' }}>

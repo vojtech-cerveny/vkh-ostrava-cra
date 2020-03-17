@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { Hamburger } from './Hamburger'
 import { CancelIcon } from '../icons/CancelIcon'
 import { NavItem, NavigationPanel, Switch, StyledLink } from './NavBar.styled'
 
-export function Navbar() {
+export function Navbar(props) {
   const [openedMenu, setOpenedMenu] = useState(false)
   const [darkTheme, setDarkTheme] = useState(false)
 
@@ -48,33 +47,15 @@ export function Navbar() {
             Domů
           </StyledLink>
         </NavItem>
-        <NavItem>
-          <StyledLink to="/rada" onClick={() => setOpenedMenu(false)}>
-            Rada
-          </StyledLink>
-        </NavItem>
-
+        {props.wordpressMenu.map(({ id, path, title }) => (
+          <NavItem key={id}>
+            <StyledLink to={path} onClick={() => setOpenedMenu(false)}>
+              {title}
+            </StyledLink>
+          </NavItem>
+        ))}
         <NavItem>Kalendář</NavItem>
         <NavItem>FOTOGALERIE</NavItem>
-        <NavItem>Ples</NavItem>
-        <NavItem>
-          <StyledLink
-            to="/duchovni-zivot-v-ostrave"
-            onClick={() => setOpenedMenu(false)}
-          >
-            Duchovní život v Ostravě
-          </StyledLink>
-        </NavItem>
-        <NavItem>
-          <StyledLink to="/vkh-v-cr" onClick={() => setOpenedMenu(false)}>
-            VKH v ČR
-          </StyledLink>
-        </NavItem>
-        <NavItem>
-          <StyledLink to="/kontakt" onClick={() => setOpenedMenu(false)}>
-            Kontakt
-          </StyledLink>
-        </NavItem>
       </NavigationPanel>
       <div
         className="sidenav-overlay"
